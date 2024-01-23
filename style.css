@@ -1,0 +1,39 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  h1 {
+    color: #3cd6e7;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #e74c3c;
+    color: rgb(0, 229, 255);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
