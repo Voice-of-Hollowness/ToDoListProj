@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TaskImplementation = void 0;
-var TaskImplementation = /** @class */ (function () {
+var TaskImplementation = /** @class **/ (function () {
     function TaskImplementation(id, description, done) {
         this.id = id;
         this.description = description;

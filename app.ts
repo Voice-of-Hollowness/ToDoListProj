@@ -40,7 +40,11 @@ class ToDoList {
     }
   
     displayTasks(): void {
+        
+        const tasks = this.loadFromLocalStorage('tasks');
         const taskListElement = document.getElementById('taskList');
+      
+
         if (taskListElement) {
           taskListElement.innerHTML = '';
     
@@ -60,7 +64,7 @@ class ToDoList {
         saveToLocalStorage('tasks', this.tasks);
     }
 
-    loadFromLocalStorage(): void {
+    loadFromLocalStorage(_p0?: string): void {
         const savedTasks = loadFromLocalStorage('tasks');
         if (savedTasks) {
             this.tasks = savedTasks;
