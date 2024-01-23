@@ -19,7 +19,14 @@ var ToDoList = /** @class */ (function () {
         this.saveToLocalStorage();
     };
     ToDoList.prototype.markTaskAsDone = function (id) {
-        var task = this.tasks.find(function (task) { return task.id === id; });
+        var task = null;
+        for (var _i = 0, _a = this.tasks; _i < _a.length; _i++) {
+            var t = _a[_i];
+            if (t.id === id) {
+                task = t;
+                break;
+            }
+        }
         if (task) {
             task.done = !task.done;
             this.displayTasks();

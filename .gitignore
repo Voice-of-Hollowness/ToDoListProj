@@ -1,0 +1,14 @@
+# JavaScript
+/node_modules
+/dist
+
+# TypeScript
+*.tsbuildinfo
+/node_modules
+/dist
+
+# General
+/node_modules
+/dist
+/venv
+.DS_Store
